@@ -41,6 +41,8 @@ def contains_char(word: str, letter: str) -> None:
     # need to differentiate between when to say "None" versus the count
     if count == 0:  # only scenario to say "None" is if the count is 0
         print("No instances of " + letter + " found in " + word)
+    if count == 1:  # need a specific case for 1 to print "instance" not "instances"
+        print("1 instance of " + letter + " found in " + word)
     else:  # everything else is covered here, so that's why an else statement works
         print(str(count) + " instances of " + letter + " found in " + word)
 
