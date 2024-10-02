@@ -5,13 +5,9 @@ __author__ = "730625616"
 
 def input_guess(secret_word_len: int) -> str:
     """Takes the user's guess and determines whether or not it's the right length"""
-    word = input(f"Enter a {secret_word_len}-character word: ")
-    a = True
-    while a:
-        if len(word) != secret_word_len:
-            word = input(f"That wasn't {secret_word_len} chars! Try again: ")
-        else:
-            a = False
+    word = input(f"Enter a {secret_word_len} character word: ")
+    while len(word) != secret_word_len:
+        word = input(f"That wasn't {secret_word_len} chars! Try again: ")
     # we will only reach this return statement if the while loop is exited
     return word
 
