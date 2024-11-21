@@ -83,7 +83,7 @@ def linkify(items: list[int]) -> Node | None:
 
 
 def scale(head: Node | None, factor: int) -> Node | None:
-    """Creates a new linked list from the inputed one with values multipied by a specified factor."""
+    """Creates a new linked list from the input with values multipied by a factor."""
     # Base case
     if head is None:
         return None
